@@ -21,12 +21,12 @@ public struct NetworkRequest {
     public let queryItems: [URLQueryItem]?
     public let httpHeaders: [String: String]?
     
-    init(
+    public init(
         path: String,
         httpMethod: HTTPMethod,
-        httpBody: Data?,
-        queryItems: [URLQueryItem]?,
-        httpHeaders: [String: String]?
+        httpBody: Data? = nil,
+        queryItems: [URLQueryItem]? = nil,
+        httpHeaders: [String: String]? = nil
     ) {
         self.path = path
         self.httpMethod = httpMethod

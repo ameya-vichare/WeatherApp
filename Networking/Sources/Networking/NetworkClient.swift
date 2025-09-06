@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 public protocol NetworkService {
-    func perform<T: Decodable>(request: NetworkRequest) -> AnyPublisher<T, NetworkError>
+    func perform<T: Decodable>(request: NetworkRequest, response: T.Type) -> AnyPublisher<T, NetworkError>
 }
 
 public class NetworkClient: NetworkService {
@@ -18,7 +18,7 @@ public class NetworkClient: NetworkService {
     let decoder: JSONDecoder
     let defaultHeaders: [String: String]
     
-    init(
+    public init(
         baseURL: URL,
         session: URLSession = .shared,
         decoder: JSONDecoder = JSONDecoder(),
@@ -31,13 +31,13 @@ public class NetworkClient: NetworkService {
     }
     
     
-    public func perform<T: Decodable>(request: NetworkRequest) -> AnyPublisher<T, NetworkError> {
+    public func perform<T: Decodable>(request: NetworkRequest, response: T.Type) -> AnyPublisher<T, NetworkError> {
         guard var components = URLComponents(url: baseURL.appendingPathComponent(request.path), resolvingAgainstBaseURL: false) else {
             return Fail(error: NetworkError.invalidURL).eraseToAnyPublisher()
         }
         
         components.queryItems = request.queryItems
-        
+
         guard let url = components.url else {
             return Fail(error: NetworkError.invalidURL).eraseToAnyPublisher()
         }

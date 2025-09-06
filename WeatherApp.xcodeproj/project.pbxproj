@@ -10,6 +10,9 @@
 		9D42D9D82E6C6F73007BB4F1 /* AppModels in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9D72E6C6F73007BB4F1 /* AppModels */; };
 		9D42D9DB2E6C6F80007BB4F1 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9DA2E6C6F80007BB4F1 /* Networking */; };
 		9D42D9F92E6C8D57007BB4F1 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9F82E6C8D57007BB4F1 /* Networking */; };
+		9D42DAFD2E6C9E1F007BB4F1 /* AppEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DAFC2E6C9E1F007BB4F1 /* AppEndpoints */; };
+		9D42DB002E6CA0C6007BB4F1 /* AppConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DAFF2E6CA0C6007BB4F1 /* AppConstants */; };
+		9D42DB022E6CA16C007BB4F1 /* AppConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DB012E6CA16C007BB4F1 /* AppConstants */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +33,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D42D9F92E6C8D57007BB4F1 /* Networking in Frameworks */,
+				9D42DAFD2E6C9E1F007BB4F1 /* AppEndpoints in Frameworks */,
+				9D42DB002E6CA0C6007BB4F1 /* AppConstants in Frameworks */,
 				9D42D9DB2E6C6F80007BB4F1 /* Networking in Frameworks */,
+				9D42DB022E6CA16C007BB4F1 /* AppConstants in Frameworks */,
 				9D42D9D82E6C6F73007BB4F1 /* AppModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +83,9 @@
 				9D42D9D72E6C6F73007BB4F1 /* AppModels */,
 				9D42D9DA2E6C6F80007BB4F1 /* Networking */,
 				9D42D9F82E6C8D57007BB4F1 /* Networking */,
+				9D42DAFC2E6C9E1F007BB4F1 /* AppEndpoints */,
+				9D42DAFF2E6CA0C6007BB4F1 /* AppConstants */,
+				9D42DB012E6CA16C007BB4F1 /* AppConstants */,
 			);
 			productName = WeatherApp;
 			productReference = 9D42D9C52E6C6D1A007BB4F1 /* WeatherApp.app */;
@@ -109,6 +118,8 @@
 			packageReferences = (
 				9D42D9D62E6C6F73007BB4F1 /* XCLocalSwiftPackageReference "AppModels" */,
 				9D42D9F72E6C8D57007BB4F1 /* XCLocalSwiftPackageReference "Networking" */,
+				9D42DAFB2E6C9E1F007BB4F1 /* XCLocalSwiftPackageReference "AppEndpoints" */,
+				9D42DAFE2E6CA0C6007BB4F1 /* XCLocalSwiftPackageReference "AppConstants" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9D42D9C62E6C6D1A007BB4F1 /* Products */;
@@ -350,6 +361,14 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Networking;
 		};
+		9D42DAFB2E6C9E1F007BB4F1 /* XCLocalSwiftPackageReference "AppEndpoints" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AppEndpoints;
+		};
+		9D42DAFE2E6CA0C6007BB4F1 /* XCLocalSwiftPackageReference "AppConstants" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AppConstants;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -364,6 +383,18 @@
 		9D42D9F82E6C8D57007BB4F1 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
+		};
+		9D42DAFC2E6C9E1F007BB4F1 /* AppEndpoints */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppEndpoints;
+		};
+		9D42DAFF2E6CA0C6007BB4F1 /* AppConstants */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppConstants;
+		};
+		9D42DB012E6CA16C007BB4F1 /* AppConstants */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppConstants;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
