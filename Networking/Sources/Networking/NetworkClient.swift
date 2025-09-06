@@ -73,10 +73,15 @@ public class NetworkClient: NetworkService {
             .mapError { error in
                 if let error = error as? NetworkError {
                     return error
-                } else if let error = error as? DecodingError {
-                    return NetworkError.unableToDecode
                 }
-                return NetworkError.unknownError
+                else if let error = error as? URLError,
+                            error.code == .cancelled {
+                    return NetworkError.cancelled
+                }
+                else if let error = error as? DecodingError {
+                    return NetworkError.decodingError(error: error)
+                }
+                return NetworkError.requestFailed(error: error)
             }
             .eraseToAnyPublisher()
         
