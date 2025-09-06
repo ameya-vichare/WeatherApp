@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D42D9D82E6C6F73007BB4F1 /* AppModels in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9D72E6C6F73007BB4F1 /* AppModels */; };
 		9D42D9DB2E6C6F80007BB4F1 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9DA2E6C6F80007BB4F1 /* Networking */; };
+		9D42D9F92E6C8D57007BB4F1 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9F82E6C8D57007BB4F1 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D42D9F92E6C8D57007BB4F1 /* Networking in Frameworks */,
 				9D42D9DB2E6C6F80007BB4F1 /* Networking in Frameworks */,
 				9D42D9D82E6C6F73007BB4F1 /* AppModels in Frameworks */,
 			);
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				9D42D9D72E6C6F73007BB4F1 /* AppModels */,
 				9D42D9DA2E6C6F80007BB4F1 /* Networking */,
+				9D42D9F82E6C8D57007BB4F1 /* Networking */,
 			);
 			productName = WeatherApp;
 			productReference = 9D42D9C52E6C6D1A007BB4F1 /* WeatherApp.app */;
@@ -105,7 +108,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9D42D9D62E6C6F73007BB4F1 /* XCLocalSwiftPackageReference "AppModels" */,
-				9D42D9D92E6C6F80007BB4F1 /* XCLocalSwiftPackageReference "Networking" */,
+				9D42D9F72E6C8D57007BB4F1 /* XCLocalSwiftPackageReference "Networking" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9D42D9C62E6C6D1A007BB4F1 /* Products */;
@@ -277,7 +280,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ameyavichare.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -306,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ameyavichare.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -343,7 +346,7 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = AppModels;
 		};
-		9D42D9D92E6C6F80007BB4F1 /* XCLocalSwiftPackageReference "Networking" */ = {
+		9D42D9F72E6C8D57007BB4F1 /* XCLocalSwiftPackageReference "Networking" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Networking;
 		};
@@ -355,6 +358,10 @@
 			productName = AppModels;
 		};
 		9D42D9DA2E6C6F80007BB4F1 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		9D42D9F82E6C8D57007BB4F1 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
 		};
