@@ -14,11 +14,25 @@ let package = Package(
             name: "WeatherModule",
             targets: ["WeatherModule"]),
     ],
+    dependencies: [
+        // Add AppConstants as a package dependency
+        .package(path: "../AppConstants"),
+        .package(path: "../Networking"),
+        .package(path: "../AppModels"),
+        .package(path: "../AppEndpoints")
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "WeatherModule"),
+            name: "WeatherModule",
+            dependencies: [
+                "AppConstants",
+                "Networking",
+                "AppModels",
+                "AppEndpoints"
+            ]
+        ),
         .testTarget(
             name: "WeatherModuleTests",
             dependencies: ["WeatherModule"]

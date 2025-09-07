@@ -9,7 +9,7 @@ import SwiftUI
 import AppConstants
 import Networking
 
-struct WeatherDetailView: View {
+public struct WeatherDetailView: View {
     @ObservedObject private var weatherDetailViewModel = WeatherDetailViewModel(
         networkClient: NetworkClient(
             baseURL: URL(
@@ -18,20 +18,20 @@ struct WeatherDetailView: View {
         )
     )
     
-    var body: some View {
+    public var body: some View {
         VStack {
             TextField("Enter city", text: $weatherDetailViewModel.city)
                 .textFieldStyle(.plain)
                 .foregroundStyle(.white)
                 .font(.largeTitle)
                 .onSubmit {
-                    weatherDetailViewModel.getGeocodeInfo()
+                    weatherDetailViewModel.makeInitialAPICall()
                     weatherDetailViewModel.city = ""
                 }
             
             Spacer()
             
-            Text("Weather ")
+            Text("\(weatherDetailViewModel.weather?.temp ?? 0)")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundStyle(.white)

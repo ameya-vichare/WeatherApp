@@ -6,9 +6,9 @@
 //
 
 public struct Weather: Decodable {
-    let temp: Double?
-    let feelsLike: Double?
-    let humidity: Int?
+    public let temp: Double?
+    public let feelsLike: Double?
+    public let humidity: Int?
     
     enum CodingKeys: String, CodingKey {
         case main
