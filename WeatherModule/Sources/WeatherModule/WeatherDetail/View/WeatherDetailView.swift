@@ -1,14 +1,13 @@
 //
-//  ContentView.swift
-//  WeatherApp
+//  SwiftUIView.swift
+//  WeatherModule
 //
-//  Created by Ameya on 06/09/25.
+//  Created by Ameya on 07/09/25.
 //
 
 import SwiftUI
-import Combine
 
-struct ContentView: View {
+struct WeatherDetailView: View {
     @State private var city: String = ""
     
     var body: some View {
@@ -37,5 +36,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    WeatherDetailView()
 }

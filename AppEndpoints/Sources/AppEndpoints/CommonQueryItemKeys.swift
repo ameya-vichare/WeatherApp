@@ -8,4 +8,7 @@
 public enum CommonQueryItemKeys: String {
     case query = "q"
     case apiKey = "appid"
+    case latitude = "lat"
+    case longitude = "lon"
+    case units
 }

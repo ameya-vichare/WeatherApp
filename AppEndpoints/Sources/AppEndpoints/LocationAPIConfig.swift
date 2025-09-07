@@ -1,5 +1,5 @@
 //
-//  LocationEndpoint.swift
+//  LocationAPIConfig.swift
 //  AppEndpoints
 //
 //  Created by Ameya on 06/09/25.
@@ -7,15 +7,17 @@
 
 import Foundation
 import AppConstants
+import Networking
 
-public enum LocationEndpoint: Endpoint {
+public enum LocationAPIConfig: APIConfig {
     case geocode(location: String)
     
     public func path() -> String {
-        switch self {
-        case .geocode(_):
-            "/geo/1.0/direct"
-        }
+        "/geo/1.0/direct"
+    }
+    
+    public func httpMethod() -> Networking.HTTPMethod {
+        .GET
     }
     
     public func queryItems() -> [URLQueryItem]? {
@@ -24,10 +26,17 @@ public enum LocationEndpoint: Endpoint {
         switch self {
         case let .geocode(location):
             queryItems.append(URLQueryItem(name: CommonQueryItemKeys.query.rawValue, value: location))
+            queryItems.append(URLQueryItem(name: CommonQueryItemKeys.apiKey.rawValue, value: AppConstants.apiKey))
         }
         
-        queryItems.append(URLQueryItem(name: CommonQueryItemKeys.apiKey.rawValue, value: AppConstants.apiKey))
-        
         return queryItems
+    }
+    
+    public func httpBody() -> Data? {
+        return nil
+    }
+    
+    public func httpHeaders() -> [String: String]? {
+        return nil
     }
 }

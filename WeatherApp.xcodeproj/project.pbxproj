@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0CB48F2E6E05E700C50ADF /* WeatherModule in Frameworks */ = {isa = PBXBuildFile; productRef = 9D0CB48E2E6E05E700C50ADF /* WeatherModule */; };
+		9D0CB4922E6E05F700C50ADF /* AppConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 9D0CB4912E6E05F700C50ADF /* AppConstants */; };
+		9D0CB4952E6E05FD00C50ADF /* AppEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = 9D0CB4942E6E05FD00C50ADF /* AppEndpoints */; };
+		9D0CB4982E6E060500C50ADF /* AppModels in Frameworks */ = {isa = PBXBuildFile; productRef = 9D0CB4972E6E060500C50ADF /* AppModels */; };
+		9D0CB49B2E6E060E00C50ADF /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D0CB49A2E6E060E00C50ADF /* Networking */; };
+		9D339CCB2E6DF9A50087DF3F /* AppConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 9D339CCA2E6DF9A50087DF3F /* AppConstants */; };
+		9D339CCE2E6DF9AD0087DF3F /* AppEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = 9D339CCD2E6DF9AD0087DF3F /* AppEndpoints */; };
+		9D339CD12E6DF9B40087DF3F /* AppModels in Frameworks */ = {isa = PBXBuildFile; productRef = 9D339CD02E6DF9B40087DF3F /* AppModels */; };
+		9D339CD42E6DF9C00087DF3F /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D339CD32E6DF9C00087DF3F /* Networking */; };
+		9D339CD62E6DFA2E0087DF3F /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D339CD52E6DFA2E0087DF3F /* Networking */; };
+		9D339CD92E6E01320087DF3F /* WeatherModule in Frameworks */ = {isa = PBXBuildFile; productRef = 9D339CD82E6E01320087DF3F /* WeatherModule */; };
 		9D42D9D82E6C6F73007BB4F1 /* AppModels in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9D72E6C6F73007BB4F1 /* AppModels */; };
 		9D42D9DB2E6C6F80007BB4F1 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9DA2E6C6F80007BB4F1 /* Networking */; };
 		9D42D9F92E6C8D57007BB4F1 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42D9F82E6C8D57007BB4F1 /* Networking */; };
 		9D42DAFD2E6C9E1F007BB4F1 /* AppEndpoints in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DAFC2E6C9E1F007BB4F1 /* AppEndpoints */; };
 		9D42DB002E6CA0C6007BB4F1 /* AppConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DAFF2E6CA0C6007BB4F1 /* AppConstants */; };
 		9D42DB022E6CA16C007BB4F1 /* AppConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DB012E6CA16C007BB4F1 /* AppConstants */; };
+		9D42DB0D2E6DF625007BB4F1 /* AppConstants in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DB0C2E6DF625007BB4F1 /* AppConstants */; };
+		9D42DB182E6DF648007BB4F1 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 9D42DB172E6DF648007BB4F1 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,11 +45,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0CB4982E6E060500C50ADF /* AppModels in Frameworks */,
 				9D42D9F92E6C8D57007BB4F1 /* Networking in Frameworks */,
+				9D0CB48F2E6E05E700C50ADF /* WeatherModule in Frameworks */,
+				9D339CCB2E6DF9A50087DF3F /* AppConstants in Frameworks */,
+				9D0CB4952E6E05FD00C50ADF /* AppEndpoints in Frameworks */,
+				9D339CD62E6DFA2E0087DF3F /* Networking in Frameworks */,
 				9D42DAFD2E6C9E1F007BB4F1 /* AppEndpoints in Frameworks */,
+				9D339CCE2E6DF9AD0087DF3F /* AppEndpoints in Frameworks */,
+				9D0CB49B2E6E060E00C50ADF /* Networking in Frameworks */,
+				9D339CD92E6E01320087DF3F /* WeatherModule in Frameworks */,
+				9D42DB182E6DF648007BB4F1 /* Networking in Frameworks */,
 				9D42DB002E6CA0C6007BB4F1 /* AppConstants in Frameworks */,
+				9D339CD42E6DF9C00087DF3F /* Networking in Frameworks */,
+				9D0CB4922E6E05F700C50ADF /* AppConstants in Frameworks */,
 				9D42D9DB2E6C6F80007BB4F1 /* Networking in Frameworks */,
 				9D42DB022E6CA16C007BB4F1 /* AppConstants in Frameworks */,
+				9D339CD12E6DF9B40087DF3F /* AppModels in Frameworks */,
+				9D42DB0D2E6DF625007BB4F1 /* AppConstants in Frameworks */,
 				9D42D9D82E6C6F73007BB4F1 /* AppModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +112,19 @@
 				9D42DAFC2E6C9E1F007BB4F1 /* AppEndpoints */,
 				9D42DAFF2E6CA0C6007BB4F1 /* AppConstants */,
 				9D42DB012E6CA16C007BB4F1 /* AppConstants */,
+				9D42DB0C2E6DF625007BB4F1 /* AppConstants */,
+				9D42DB172E6DF648007BB4F1 /* Networking */,
+				9D339CCA2E6DF9A50087DF3F /* AppConstants */,
+				9D339CCD2E6DF9AD0087DF3F /* AppEndpoints */,
+				9D339CD02E6DF9B40087DF3F /* AppModels */,
+				9D339CD32E6DF9C00087DF3F /* Networking */,
+				9D339CD52E6DFA2E0087DF3F /* Networking */,
+				9D339CD82E6E01320087DF3F /* WeatherModule */,
+				9D0CB48E2E6E05E700C50ADF /* WeatherModule */,
+				9D0CB4912E6E05F700C50ADF /* AppConstants */,
+				9D0CB4942E6E05FD00C50ADF /* AppEndpoints */,
+				9D0CB4972E6E060500C50ADF /* AppModels */,
+				9D0CB49A2E6E060E00C50ADF /* Networking */,
 			);
 			productName = WeatherApp;
 			productReference = 9D42D9C52E6C6D1A007BB4F1 /* WeatherApp.app */;
@@ -116,10 +155,11 @@
 			mainGroup = 9D42D9BC2E6C6D1A007BB4F1;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				9D42D9D62E6C6F73007BB4F1 /* XCLocalSwiftPackageReference "AppModels" */,
-				9D42D9F72E6C8D57007BB4F1 /* XCLocalSwiftPackageReference "Networking" */,
-				9D42DAFB2E6C9E1F007BB4F1 /* XCLocalSwiftPackageReference "AppEndpoints" */,
-				9D42DAFE2E6CA0C6007BB4F1 /* XCLocalSwiftPackageReference "AppConstants" */,
+				9D0CB48D2E6E05E700C50ADF /* XCLocalSwiftPackageReference "WeatherModule" */,
+				9D0CB4902E6E05F700C50ADF /* XCLocalSwiftPackageReference "AppConstants" */,
+				9D0CB4932E6E05FD00C50ADF /* XCLocalSwiftPackageReference "AppEndpoints" */,
+				9D0CB4962E6E060500C50ADF /* XCLocalSwiftPackageReference "AppModels" */,
+				9D0CB4992E6E060E00C50ADF /* XCLocalSwiftPackageReference "Networking" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9D42D9C62E6C6D1A007BB4F1 /* Products */;
@@ -353,25 +393,73 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		9D42D9D62E6C6F73007BB4F1 /* XCLocalSwiftPackageReference "AppModels" */ = {
+		9D0CB48D2E6E05E700C50ADF /* XCLocalSwiftPackageReference "WeatherModule" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = AppModels;
+			relativePath = WeatherModule;
 		};
-		9D42D9F72E6C8D57007BB4F1 /* XCLocalSwiftPackageReference "Networking" */ = {
+		9D0CB4902E6E05F700C50ADF /* XCLocalSwiftPackageReference "AppConstants" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Networking;
+			relativePath = AppConstants;
 		};
-		9D42DAFB2E6C9E1F007BB4F1 /* XCLocalSwiftPackageReference "AppEndpoints" */ = {
+		9D0CB4932E6E05FD00C50ADF /* XCLocalSwiftPackageReference "AppEndpoints" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = AppEndpoints;
 		};
-		9D42DAFE2E6CA0C6007BB4F1 /* XCLocalSwiftPackageReference "AppConstants" */ = {
+		9D0CB4962E6E060500C50ADF /* XCLocalSwiftPackageReference "AppModels" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = AppConstants;
+			relativePath = AppModels;
+		};
+		9D0CB4992E6E060E00C50ADF /* XCLocalSwiftPackageReference "Networking" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Networking;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9D0CB48E2E6E05E700C50ADF /* WeatherModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WeatherModule;
+		};
+		9D0CB4912E6E05F700C50ADF /* AppConstants */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppConstants;
+		};
+		9D0CB4942E6E05FD00C50ADF /* AppEndpoints */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppEndpoints;
+		};
+		9D0CB4972E6E060500C50ADF /* AppModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppModels;
+		};
+		9D0CB49A2E6E060E00C50ADF /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		9D339CCA2E6DF9A50087DF3F /* AppConstants */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppConstants;
+		};
+		9D339CCD2E6DF9AD0087DF3F /* AppEndpoints */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppEndpoints;
+		};
+		9D339CD02E6DF9B40087DF3F /* AppModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppModels;
+		};
+		9D339CD32E6DF9C00087DF3F /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		9D339CD52E6DFA2E0087DF3F /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		9D339CD82E6E01320087DF3F /* WeatherModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WeatherModule;
+		};
 		9D42D9D72E6C6F73007BB4F1 /* AppModels */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppModels;
@@ -395,6 +483,14 @@
 		9D42DB012E6CA16C007BB4F1 /* AppConstants */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppConstants;
+		};
+		9D42DB0C2E6DF625007BB4F1 /* AppConstants */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppConstants;
+		};
+		9D42DB172E6DF648007BB4F1 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -22,16 +22,12 @@ public struct NetworkRequest {
     public let httpHeaders: [String: String]?
     
     public init(
-        path: String,
-        httpMethod: HTTPMethod,
-        httpBody: Data? = nil,
-        queryItems: [URLQueryItem]? = nil,
-        httpHeaders: [String: String]? = nil
+        apiConfig: APIConfig
     ) {
-        self.path = path
-        self.httpMethod = httpMethod
-        self.httpBody = httpBody
-        self.queryItems = queryItems
-        self.httpHeaders = httpHeaders
+        self.path = apiConfig.path()
+        self.httpMethod = apiConfig.httpMethod()
+        self.httpBody = apiConfig.httpBody()
+        self.queryItems = apiConfig.queryItems()
+        self.httpHeaders = apiConfig.httpHeaders()
     }
 }
