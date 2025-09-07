@@ -18,6 +18,8 @@ public struct WeatherDetailView: View {
         )
     )
     
+    public init() {}
+    
     public var body: some View {
         VStack {
             TextField("Enter city", text: $weatherDetailViewModel.city)

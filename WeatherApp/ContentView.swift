@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-import Combine
+import WeatherModule
 
 struct ContentView: View {
     @State private var city: String = ""
     
     var body: some View {
-        Text("Hello")
+        WeatherDetailView()
     }
 }
 
