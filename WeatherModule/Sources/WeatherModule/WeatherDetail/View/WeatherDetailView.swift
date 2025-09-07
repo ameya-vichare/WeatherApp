@@ -6,18 +6,27 @@
 //
 
 import SwiftUI
+import AppConstants
+import Networking
 
 struct WeatherDetailView: View {
-    @State private var city: String = ""
+    @ObservedObject private var weatherDetailViewModel = WeatherDetailViewModel(
+        networkClient: NetworkClient(
+            baseURL: URL(
+                string: AppConstants.baseURL
+            )!
+        )
+    )
     
     var body: some View {
         VStack {
-            TextField("Enter city", text: $city)
+            TextField("Enter city", text: $weatherDetailViewModel.city)
                 .textFieldStyle(.plain)
                 .foregroundStyle(.white)
                 .font(.largeTitle)
                 .onSubmit {
-                    city = ""
+                    weatherDetailViewModel.getGeocodeInfo()
+                    weatherDetailViewModel.city = ""
                 }
             
             Spacer()
